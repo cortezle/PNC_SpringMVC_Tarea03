@@ -8,20 +8,19 @@
 </head>
 
 <body>
-  <p>Esta página web es una página HTML válida.</p>
-  <h1 class="mt-4">Formulario con HttpServletRequest</h1>
+  <h1 class="mt-4">Formulario Registro de Alumno</h1>
 			<div class="card mb-4">
             	<div class="card-body">
-            		<p class="mb-0">Ingrese sus credenciales:</p><br/>
+            		<p class="mb-0">Ingrese datos del alumno:</p><br/>
             		<form method="post" th:action="@{/resultado}">
 	            		<div class="form-group"><label class="small mb-1" for="nombre">Nombre</label><input class="form-control py-4" id="usuario" type="text" placeholder="Ingrese Nombre" style="width: 400px" name="nombre" /></div>
 	                    <div class="form-group"><label class="small mb-1" for="apellido">Apellido</label><input class="form-control py-4" id="password" type="text" placeholder="Ingrese Apellido" style="width: 400px" name="apellido"/></div>
-	                    <div class="form-group"><label class="small mb-1" for="fechaN">Apellido</label><input id="fechaN" type="date" name="fehcaN"/></div>
+	                    <div class="form-group"><label class="small mb-1" for="fechaN">Fecha de Nacimiento</label><input class="form-control py-4" id="fechaN" type="text" placeholder="AAAA-MM-DD" style="width: 400px" name="fechaN"/></div>
 	                    <div class="form-group"><label class="small mb-1" for="lNacimiento">Lugar de Nacimiento</label><input class="form-control py-4" id="lugar" type="text" placeholder="Ingrese Lugar de Nacimiento" style="width: 400px" name="lugar"/></div>
 	                    <div class="form-group"><label class="small mb-1" for="lEstudio">Lugar de Estudio(Instituto o Colegio)</label><input class="form-control py-4" id="instituto" type="text" placeholder="Ingrese Lugar de Estudio" style="width: 400px" name="instituto"/></div>
-	                    <div class="form-group"><label class="small mb-1" for="tel">Telefono Fijo</label><input class="form-control py-4" id="tel" type="number" placeholder="Ingrese Telefono Fijo" style="width: 400px" name="tel"/></div>
-	                    <div class="form-group"><label class="small mb-1" for="cel">Telefono Movil</label><input class="form-control py-4" id="cel" type="number" placeholder="Ingrese Telefono Movil" style="width: 400px" name="cel"/></div>
-	                    <div class="form-group"><input type="submit" class="btn btn-primary" value="Iniciar Sesi&oacute;n"></a></div>
+	                    <div class="form-group"><label class="small mb-1" for="tel">Telefono Fijo</label><input class="form-control py-4" id="tel" type="text" placeholder="12345678" style="width: 400px" name="tel"/></div>
+	                    <div class="form-group"><label class="small mb-1" for="cel">Telefono Movil</label><input class="form-control py-4" id="cel" type="text" placeholder="12345678" style="width: 400px" name="cel"/></div>
+	                    <div class="form-group"><input type="submit" class="btn btn-primary" value="Guardar Alumno"></a></div>
 	                </form>
             	</div>
             </div>

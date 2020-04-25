@@ -2,23 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>HTML</title>
+  <title>Error al Registrar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-  <span th:text="${nombre}"></span>
-  <span th:text="${apellido}"></span> 
-  <span th:text="${fechaN}"></span>
-  <p class="mb-0">Errores en el formulario</p>
+  <p class="mb-0">¡Errores en el formulario¡</p>
             		<table>
             			<tr th:each="e : ${errores}">
             				<td th:text="${e}" />
             			</tr>
             		</table>
              		<form method="get" th:action="@{/ingresar}">
-	                    <div class="form-group"><input type="submit" class="btn btn-primary" value="Ingresar Otro Alumno"></a></div>
+	                    <div class="form-group"><input type="submit" class="btn btn-primary" value="Regresar a Ingresar Alumno"></a></div>
 	                </form>
 </body>
 
